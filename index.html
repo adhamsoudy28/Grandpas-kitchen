@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grandpa's Kitchen · Dahab</title>
+  <meta name="description" content="Grandpa's Kitchen is a chef-owned restaurant on El Melil Street, Dahab. Honest home cooking, slow-cooked steaks, and Red Sea sunsets. Open daily 1pm to 10pm.">
+  <meta name="theme-color" content="#c4572f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grandpa's Kitchen · Dahab">
+  <meta property="og:description" content="Chef-owned comfort food in the heart of Dahab. Steak and mash, almond steak, chicken fajitas, and a table that feels like home.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <meta property="og:locale" content="en_GB">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Grandpa's Kitchen",
+    "image": "assets/hero.jpg",
+    "servesCuisine": ["International", "Comfort food", "Grill"],
+    "priceRange": "$$",
+    "telephone": "+201116360361",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "El Melil Street",
+      "addressLocality": "Dahab",
+      "addressRegion": "South Sinai",
+      "addressCountry": "EG"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "13:00",
+      "closes": "22:00"
+    },
+    "sameAs": ["https://www.instagram.com/grandpa_kitchen_dahab/"]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#story">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Grandpa's Kitchen home">
+        <span class="nav__logo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="23" fill="currentColor" opacity=".12"/>
+            <path d="M14 30c0-6 4.5-10 10-10s10 4 10 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M11 30h26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 20v-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="24" cy="14" r="2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="nav__name">Grandpa's Kitchen</span>
+        <span class="nav__place">Dahab</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#story">The Chef</a>
+        <a href="#menu">Menu</a>
+        <a href="#dahab">Dahab</a>
+        <a href="#reviews">Guests</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="https://wa.me/201116360361?text=Hi%20Grandpa%27s%20Kitchen%2C%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4 5.3 5.3 0 0 0 3.1.6 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Book on WhatsApp
+        </a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__scene" aria-hidden="true">
+        <div class="hero__sky"></div>
+        <div class="hero__sun"></div>
+        <svg class="hero__mountains" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path d="M0 260 L120 210 L210 240 L330 150 L420 200 L540 120 L640 190 L760 140 L880 210 L980 160 L1100 230 L1220 170 L1330 220 L1440 180 L1440 320 L0 320 Z" fill="#7a3b2a"/>
+          <path d="M0 290 L140 250 L260 275 L400 220 L520 265 L660 230 L800 270 L940 235 L1080 275 L1220 245 L1360 280 L1440 260 L1440 320 L0 320 Z" fill="#54261a"/>
+        </svg>
+        <svg class="hero__sea" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0 40 C 180 10, 360 70, 540 40 S 900 10, 1080 40 S 1350 70, 1440 40 L1440 120 L0 120 Z" fill="#1f6e78"/>
+          <path d="M0 70 C 200 45, 400 95, 600 70 S 1000 45, 1200 70 S 1400 95, 1440 70 L1440 120 L0 120 Z" fill="#175a63"/>
+        </svg>
+        <img class="hero__photo" src="assets/hero.jpg" alt="" onerror="this.remove()">
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow reveal">El Melil Street · Dahab · South Sinai</p>
+        <h1 class="hero__title reveal">
+          Home cooking,<br>
+          <em>by a chef who came home.</em>
+        </h1>
+        <p class="hero__lead reveal">
+          Slow-cooked steaks, buttery mash, and recipes a grandfather would be proud of.
+          Pull up a chair, the sea is just outside.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="https://wa.me/201116360361?text=Hi%20Grandpa%27s%20Kitchen%2C%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Book a table</a>
+          <a class="btn btn--ghost" href="#menu">See what's cooking</a>
+        </div>
+        <div class="hero__meta reveal">
+          <span class="rating" title="Google rating">
+            <span class="rating__stars" aria-hidden="true">★★★★★</span>
+            <span><strong>4.7</strong> on Google</span>
+          </span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="open-badge" id="openBadge"><span class="open-badge__pulse"></span>Open daily 1pm – 10pm</span>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#story" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Steak &amp; mash</span><i>✦</i>
+        <span>Almond steak</span><i>✦</i>
+        <span>Chicken fajitas</span><i>✦</i>
+        <span>Cooked from scratch</span><i>✦</i>
+        <span>Open daily 1pm – 10pm</span><i>✦</i>
+        <span>El Melil Street, Dahab</span><i>✦</i>
+        <span>Steak &amp; mash</span><i>✦</i>
+        <span>Almond steak</span><i>✦</i>
+        <span>Chicken fajitas</span><i>✦</i>
+        <span>Cooked from scratch</span><i>✦</i>
+        <span>Open daily 1pm – 10pm</span><i>✦</i>
+        <span>El Melil Street, Dahab</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ STORY / CHEF ============ -->
+    <section class="section story" id="story">
+      <div class="container story__grid">
+        <div class="story__media reveal">
+          <div class="frame frame--tilt">
+            <img src="assets/chef.jpg" alt="The chef at Grandpa's Kitchen, Dahab" onerror="this.parentElement.classList.add('frame--empty'); this.remove()">
+            <div class="frame__placeholder" aria-hidden="true">
+              <svg viewBox="0 0 200 200" fill="none">
+                <circle cx="100" cy="78" r="34" stroke="currentColor" stroke-width="5"/>
+                <path d="M42 176c6-32 30-50 58-50s52 18 58 50" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <path d="M72 62c6-18 50-18 56 0" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <path d="M78 38c8-14 36-14 44 0" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+              <span>Chef portrait</span>
+            </div>
+          </div>
+          <div class="story__stamp" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="circlePath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <text font-size="11.5" letter-spacing="2" textLength="272" lengthAdjust="spacing"><textPath href="#circlePath" textLength="272" lengthAdjust="spacing">COOKED WITH LOVE · DAHAB · SINAI · </textPath></text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="story__text">
+          <p class="eyebrow reveal">The chef</p>
+          <h2 class="reveal">He spent years in professional kitchens. Then he came home to cook the way his grandfather did.</h2>
+          <p class="reveal">
+            Grandpa's Kitchen started with a simple idea: food should taste like someone cared.
+            After a career as a working chef, the owner came back to Dahab to open the restaurant
+            he had always dreamed about. Small enough to know your name, serious enough to rest a steak properly.
+          </p>
+          <p class="reveal">
+            Every sauce is made in-house. The mash is whipped to order. The playlist is his.
+            Most nights you'll find him somewhere between the grill and your table, asking how it was.
+          </p>
+
+          <ul class="pillars reveal">
+            <li>
+              <span class="pillars__icon" aria-hidden="true">🔥</span>
+              <strong>From scratch</strong>
+              <span>No shortcuts, no packets. Stocks, sauces and marinades are made here, daily.</span>
+            </li>
+            <li>
+              <span class="pillars__icon" aria-hidden="true">👨‍🍳</span>
+              <strong>Chef-owned</strong>
+              <span>One kitchen, one cook who answers for every plate that leaves it.</span>
+            </li>
+            <li>
+              <span class="pillars__icon" aria-hidden="true">🌅</span>
+              <strong>Dahab slow</strong>
+              <span>Nothing is rushed. Order, breathe, watch the light change on the mountains.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">The menu</p>
+          <h2 class="reveal">Guest favourites</h2>
+          <p class="section__lead reveal">
+            The plates people come back for. The full menu changes with the season and the market,
+            so ask what's fresh today.
+          </p>
+        </div>
+
+        <div class="dishes">
+          <article class="dish reveal">
+            <div class="dish__media dish__media--steak">
+              <img src="assets/dish-steak-mash.jpg" alt="Steak with buttery mashed potato" onerror="this.remove()">
+              <span class="dish__tag">Most loved</span>
+            </div>
+            <div class="dish__body">
+              <h3>Steak &amp; Mash</h3>
+              <p>Grilled to your liking and rested, over a mound of whipped buttery mash with pan jus. The dish that built the reputation.</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__media dish__media--almond">
+              <img src="assets/dish-almond-steak.jpg" alt="Almond-crusted steak" onerror="this.remove()">
+              <span class="dish__tag">Chef's signature</span>
+            </div>
+            <div class="dish__body">
+              <h3>Almond Steak</h3>
+              <p>Tender beef in a toasted almond cream sauce. Rich, nutty, and the dish guests call "the highlight of the trip".</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__media dish__media--fajitas">
+              <img src="assets/dish-fajitas.jpg" alt="Sizzling chicken fajitas" onerror="this.remove()">
+              <span class="dish__tag">Sizzling</span>
+            </div>
+            <div class="dish__body">
+              <h3>Chicken Fajitas</h3>
+              <p>Marinated chicken, charred peppers and onions, brought to the table still sizzling with warm tortillas and all the sides.</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__media dish__media--seafood">
+              <img src="assets/dish-seafood.jpg" alt="Grilled Red Sea catch" onerror="this.remove()">
+              <span class="dish__tag">From the sea</span>
+            </div>
+            <div class="dish__body">
+              <h3>Catch of the Day</h3>
+              <p>Whatever the boats brought in that morning, grilled simply with lemon, garlic and herbs. Ask what's on.</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__media dish__media--pasta">
+              <img src="assets/dish-pasta.jpg" alt="Creamy pasta" onerror="this.remove()">
+              <span class="dish__tag">Comfort</span>
+            </div>
+            <div class="dish__body">
+              <h3>Creamy Mushroom Pasta</h3>
+              <p>Fresh pasta tossed in a slow-reduced mushroom and parmesan cream. The plate for a long evening.</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__media dish__media--dessert">
+              <img src="assets/dish-dessert.jpg" alt="Warm dessert" onerror="this.remove()">
+              <span class="dish__tag">Sweet</span>
+            </div>
+            <div class="dish__body">
+              <h3>Grandpa's Dessert</h3>
+              <p>Something warm and homemade to finish. It changes with his mood, and it is always worth saving room for.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu__more reveal">
+          <div class="menu__col">
+            <h4>To start</h4>
+            <ul>
+              <li>Soup of the day</li>
+              <li>Fresh garden salad</li>
+              <li>Garlic bread, house butter</li>
+              <li>Mezze plate, warm bread</li>
+            </ul>
+          </div>
+          <div class="menu__col">
+            <h4>From the grill</h4>
+            <ul>
+              <li>Beef steaks, your way</li>
+              <li>Grilled chicken, herb marinade</li>
+              <li>Mixed grill for two</li>
+              <li>Vegetable skewers</li>
+            </ul>
+          </div>
+          <div class="menu__col">
+            <h4>To drink</h4>
+            <ul>
+              <li>Fresh juices &amp; lemon mint</li>
+              <li>Bedouin tea with sage</li>
+              <li>Turkish &amp; filter coffee</li>
+              <li>Soft drinks &amp; water</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu__cta reveal">
+          <p>Prices, today's specials and dietary requests: just ask.</p>
+          <a class="btn btn--primary" href="https://wa.me/201116360361?text=Hi%20Grandpa%27s%20Kitchen%2C%20could%20you%20send%20me%20today%27s%20menu%3F" target="_blank" rel="noopener">Ask for today's menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DAHAB ============ -->
+    <section class="section dahab" id="dahab">
+      <div class="dahab__sunset" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head section__head--light">
+          <p class="eyebrow reveal">The town</p>
+          <h2 class="reveal">Dahab means gold. You'll understand at sunset.</h2>
+          <p class="section__lead reveal">
+            A small Bedouin town squeezed between the Sinai mountains and the Red Sea,
+            where the day runs on dive schedules and the evening runs on nothing at all.
+          </p>
+        </div>
+
+        <div class="places">
+          <article class="place reveal">
+            <div class="place__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="8"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4"/></svg>
+            </div>
+            <h3>The Blue Hole</h3>
+            <p>One of the most famous dive sites on earth, a 15-minute drive north. Snorkel the rim, or go deep with a guide.</p>
+          </article>
+
+          <article class="place reveal">
+            <div class="place__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 42h12M20 42l2-28h4l2 28M20 14h8M16 10l16 0M18 6h12M24 2v4"/><path d="M8 20l6 3M40 20l-6 3"/></svg>
+            </div>
+            <h3>The Lighthouse</h3>
+            <p>Reef straight off the shore in the heart of town. Learn to dive here in the morning, eat here in the afternoon.</p>
+          </article>
+
+          <article class="place reveal">
+            <div class="place__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 36c4-4 8-4 12 0s8 4 12 0 8-4 12 0 4 4 4 4"/><path d="M4 28c4-4 8-4 12 0s8 4 12 0 8-4 12 0"/><path d="M14 20l6-10 4 6 4-8 8 12"/></svg>
+            </div>
+            <h3>The Lagoon</h3>
+            <p>Shallow turquoise water and steady wind. Kitesurfers, windsurfers and anyone who just wants to float.</p>
+          </article>
+
+          <article class="place reveal">
+            <div class="place__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 40L18 14l8 14 6-8 12 20H4z"/><circle cx="36" cy="10" r="4"/></svg>
+            </div>
+            <h3>The Mountains</h3>
+            <p>Granite peaks that turn pink, then gold, then purple. Bedouin tea in a wadi is the best dessert in Sinai.</p>
+          </article>
+
+          <article class="place reveal">
+            <div class="place__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 12v12l8 4"/></svg>
+            </div>
+            <h3>Dahab time</h3>
+            <p>Nobody is in a hurry. Plans change with the wind. The only fixed appointment is sunset, and it never cancels.</p>
+          </article>
+
+          <article class="place place--us reveal">
+            <div class="place__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 30c0-8 6-14 14-14s14 6 14 14"/><path d="M6 30h36"/><path d="M24 16v-6"/><circle cx="24" cy="8" r="2"/></svg>
+            </div>
+            <h3>Grandpa's Kitchen</h3>
+            <p>Our part in all of this: the table you come back to after the sea, with a plate that tastes like someone was waiting for you.</p>
+          </article>
+        </div>
+
+        <div class="day reveal">
+          <h3 class="day__title">A Dahab day, Grandpa's way</h3>
+          <ol class="day__steps">
+            <li><span class="day__time">07:00</span><span>Two dives at the Lighthouse or the Blue Hole while the water is glass.</span></li>
+            <li><span class="day__time">13:00</span><span>Doors open. Come hungry. The steak and mash is waiting.</span></li>
+            <li><span class="day__time">17:30</span><span>Walk the promenade, watch the mountains catch fire across the gulf.</span></li>
+            <li><span class="day__time">20:00</span><span>Back for dinner, almond steak and a long chat with the chef.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Guests</p>
+          <h2 class="reveal">What people say after the last bite</h2>
+        </div>
+
+        <div class="quotes">
+          <blockquote class="quote reveal">
+            <p>"The almond steak was the highlight of our trip. Didn't expect to find food this good in Dahab."</p>
+            <footer>Google review</footer>
+          </blockquote>
+          <blockquote class="quote reveal">
+            <p>"Rustic, eclectic, and so cosy. The vibe and the music are great and the owner is super nice."</p>
+            <footer>Google review</footer>
+          </blockquote>
+          <blockquote class="quote reveal">
+            <p>"The owner came back from a chef's life to run his dream restaurant, and you can taste his passion in every plate."</p>
+            <footer>Google review</footer>
+          </blockquote>
+        </div>
+
+        <div class="reviews__badge reveal">
+          <span class="rating__stars" aria-hidden="true">★★★★★</span>
+          <strong>4.7 / 5</strong>
+          <span>from 130+ Google reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="section insta">
+      <div class="container">
+        <div class="insta__head reveal">
+          <div>
+            <p class="eyebrow">Follow along</p>
+            <h2>Fresh from the grill, on Instagram</h2>
+          </div>
+          <a class="btn btn--outline" href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener">@grandpa_kitchen_dahab</a>
+        </div>
+        <div class="insta__grid reveal" aria-hidden="true">
+          <a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener" class="insta__tile insta__tile--1"><img src="assets/ig-1.jpg" alt="" onerror="this.remove()"></a>
+          <a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener" class="insta__tile insta__tile--2"><img src="assets/ig-2.jpg" alt="" onerror="this.remove()"></a>
+          <a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener" class="insta__tile insta__tile--3"><img src="assets/ig-3.jpg" alt="" onerror="this.remove()"></a>
+          <a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener" class="insta__tile insta__tile--4"><img src="assets/ig-4.jpg" alt="" onerror="this.remove()"></a>
+          <a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener" class="insta__tile insta__tile--5"><img src="assets/ig-5.jpg" alt="" onerror="this.remove()"></a>
+          <a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener" class="insta__tile insta__tile--6"><img src="assets/ig-6.jpg" alt="" onerror="this.remove()"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section visit" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow reveal">Visit</p>
+          <h2 class="reveal">Come as you are. Sandy feet welcome.</h2>
+
+          <dl class="visit__list reveal">
+            <div>
+              <dt>Hours</dt>
+              <dd>Every day, 1:00 pm – 10:00 pm<br><small id="visitStatus"></small></dd>
+            </div>
+            <div>
+              <dt>Address</dt>
+              <dd>El Melil Street, Dahab<br>South Sinai, Egypt</dd>
+            </div>
+            <div>
+              <dt>Phone / WhatsApp</dt>
+              <dd><a href="tel:+201116360361">+20 11 1636 0361</a></dd>
+            </div>
+            <div>
+              <dt>Instagram</dt>
+              <dd><a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener">@grandpa_kitchen_dahab</a></dd>
+            </div>
+          </dl>
+
+          <div class="visit__actions reveal">
+            <a class="btn btn--primary" href="https://wa.me/201116360361?text=Hi%20Grandpa%27s%20Kitchen%2C%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Book on WhatsApp</a>
+            <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&query=Grandpa%27s+Kitchen+Dahab" target="_blank" rel="noopener">Get directions</a>
+          </div>
+
+          <p class="visit__note reveal">Groups of six or more: a quick WhatsApp message the day before means we can keep the big table for you.</p>
+        </div>
+
+        <div class="visit__map reveal">
+          <iframe
+            title="Map showing Grandpa's Kitchen in Dahab"
+            src="https://www.google.com/maps?q=Grandpa%27s+Kitchen+Dahab+Egypt&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Grandpa's Kitchen</strong>
+        <span>El Melil Street, Dahab · Open daily 1pm – 10pm</span>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#story">The Chef</a>
+        <a href="#menu">Menu</a>
+        <a href="#dahab">Dahab</a>
+        <a href="#visit">Visit</a>
+        <a href="https://www.instagram.com/grandpa_kitchen_dahab/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Grandpa's Kitchen, Dahab. Made with care, like everything else here.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/201116360361?text=Hi%20Grandpa%27s%20Kitchen%2C%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4 5.3 5.3 0 0 0 3.1.6 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
