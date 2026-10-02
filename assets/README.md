@@ -1,5 +1,10 @@
 # Photos for the website
 
+Generated artwork currently fills the hero (`hero.jpg`), the Dahab backdrop
+(`dahab.jpg`) and six texture tiles (`tex-*.jpg`). They were rendered in code,
+not photographed. Replace any of them with real photos under the same name and
+the page picks them up with no code change.
+
 The site is designed to work with or without photos. Every image slot has a
 warm illustrated fallback, so nothing looks broken while you collect pictures.
 To bring in the real Instagram photos, save them here with these exact names.

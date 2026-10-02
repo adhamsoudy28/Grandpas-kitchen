@@ -183,8 +183,8 @@ p  { margin: 0 0 1em; }
 .hero__mountains { position: absolute; left: 0; right: 0; bottom: 60px; width: 100%; height: 34vh; min-height: 180px; }
 .hero__sea { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 120px; }
 .hero__photo {
-  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
-  opacity: .9;
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 60%;
+  opacity: 1;
   mask-image: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,.4));
   -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,.4));
 }
@@ -224,7 +224,7 @@ p  { margin: 0 0 1em; }
 @keyframes ticker { to { transform: translateX(-50%); } }
 
 /* ---------- Story ---------- */
-.story { background: var(--sand); }
+.story { background: linear-gradient(rgba(244,233,214,.86), rgba(244,233,214,.86)), url("../assets/tex-sand.jpg") center / 900px repeat; }
 .story__grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(36px, 6vw, 90px); align-items: center; }
 .story__media { position: relative; }
 .frame {
@@ -290,12 +290,13 @@ p  { margin: 0 0 1em; }
   display: grid; place-items: center; font-size: 3.6rem; opacity: .9;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,.25));
 }
-.dish__media--steak   { --dish-bg: linear-gradient(140deg, #8a3b23, #3f2416); --dish-glyph: "🥩"; }
-.dish__media--almond  { --dish-bg: linear-gradient(140deg, #e4a23c, #a85a2a); --dish-glyph: "🌰"; }
-.dish__media--fajitas { --dish-bg: linear-gradient(140deg, #d9682f, #7a2e2e); --dish-glyph: "🌶️"; }
-.dish__media--seafood { --dish-bg: linear-gradient(140deg, #8fc7cc, #1f6e78); --dish-glyph: "🐟"; }
-.dish__media--pasta   { --dish-bg: linear-gradient(140deg, #f3c777, #b98042); --dish-glyph: "🍝"; }
-.dish__media--dessert { --dish-bg: linear-gradient(140deg, #f0d6c0, #a65c4b); --dish-glyph: "🍮"; }
+.dish__media::before { background-size: cover; background-position: center; }
+.dish__media--steak   { --dish-bg: linear-gradient(rgba(60,20,10,.35), rgba(60,20,10,.35)), url("../assets/tex-grill.jpg"); --dish-glyph: "🥩"; }
+.dish__media--almond  { --dish-bg: linear-gradient(rgba(228,162,60,.35), rgba(120,60,20,.45)), url("../assets/tex-wood.jpg"); --dish-glyph: "🌰"; }
+.dish__media--fajitas { --dish-bg: linear-gradient(rgba(196,87,47,.5), rgba(90,30,30,.6)), url("../assets/tex-wood.jpg"); --dish-glyph: "🌶️"; }
+.dish__media--seafood { --dish-bg: linear-gradient(rgba(31,110,120,.25), rgba(15,60,70,.35)), url("../assets/tex-sea.jpg"); --dish-glyph: "🐟"; }
+.dish__media--pasta   { --dish-bg: linear-gradient(rgba(243,199,119,.35), rgba(160,110,60,.45)), url("../assets/tex-linen.jpg"); --dish-glyph: "🍝"; }
+.dish__media--dessert { --dish-bg: linear-gradient(rgba(240,214,192,.3), rgba(140,80,60,.45)), url("../assets/tex-sand.jpg"); --dish-glyph: "🍮"; }
 .dish__tag {
   position: absolute; top: 14px; left: 14px; z-index: 2;
   background: rgba(63, 36, 22, .85); color: var(--gold-soft);
@@ -325,9 +326,8 @@ p  { margin: 0 0 1em; }
 .dahab__sunset {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(60% 50% at 85% 0%, rgba(228, 162, 60, .35), transparent 70%),
-    radial-gradient(50% 40% at 10% 100%, rgba(196, 87, 47, .35), transparent 70%),
-    linear-gradient(180deg, #124850 0%, #0f3b42 100%);
+    linear-gradient(180deg, rgba(18, 72, 80, .55) 0%, rgba(15, 59, 66, .78) 60%, rgba(15, 59, 66, .92) 100%),
+    url("../assets/dahab.jpg") center / cover no-repeat, #124850;
 }
 .dahab .container { position: relative; }
 .places { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
@@ -357,6 +357,15 @@ p  { margin: 0 0 1em; }
 }
 .day__time { display: block; font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--cream); margin-bottom: 6px; }
 .day__steps li span:last-child { color: rgba(251, 246, 238, .8); font-size: .96rem; }
+
+.know { margin-top: clamp(40px, 6vw, 72px); padding: clamp(28px, 4vw, 44px); border-radius: var(--radius);
+  background: rgba(251, 246, 238, .06); border: 1px solid rgba(255, 255, 255, .12); backdrop-filter: blur(6px); }
+.know__head { max-width: 620px; margin-bottom: 26px; }
+.know__title { color: var(--gold-soft); font-style: italic; font-weight: 600; margin-bottom: 6px; }
+.know__head p { margin: 0; color: rgba(251, 246, 238, .75); }
+.know__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 28px; }
+.know__item p { margin: 0; color: rgba(251, 246, 238, .82); font-size: .95rem; }
+.know__label { display: block; font-size: .74rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
 
 /* ---------- Reviews ---------- */
 .reviews { background: var(--sand); }
@@ -449,7 +458,7 @@ p  { margin: 0 0 1em; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
-  .dishes, .places, .quotes { grid-template-columns: repeat(2, 1fr); }
+  .dishes, .places, .quotes, .know__grid { grid-template-columns: repeat(2, 1fr); }
   .day__steps { grid-template-columns: repeat(2, 1fr); }
   .insta__grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -476,11 +485,12 @@ p  { margin: 0 0 1em; }
   .menu__more { grid-template-columns: 1fr; }
   .hero { padding: 110px 0 80px; }
   .hero__mountains { bottom: 50px; height: 26vh; }
+  .hero__photo { object-position: 72% 60%; }
 }
 
 @media (max-width: 560px) {
   body { font-size: 16px; }
-  .dishes, .places, .quotes, .day__steps { grid-template-columns: 1fr; }
+  .dishes, .places, .quotes, .day__steps, .know__grid { grid-template-columns: 1fr; }
   .insta__grid { grid-template-columns: repeat(2, 1fr); }
   .visit__list > div { grid-template-columns: 1fr; gap: 4px; }
   .hero__actions .btn { width: 100%; justify-content: center; }
